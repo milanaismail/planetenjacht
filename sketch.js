@@ -37,7 +37,9 @@ function preload() {
 
 function setup() {
   startDisplay();
-  createCanvas(600, 900);
+  createCanvas(600, 700);
+  let canvas = select('canvas'); // Select the canvas element
+  canvas.elt.id = 'gameCanvas'; // Use the elt property to set the ID
 }
 
 function keyPressed(){
